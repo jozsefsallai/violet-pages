@@ -8,16 +8,16 @@ const IndexPage = () => {
     <>
       <Meta title="VIOLET" url="/" />
 
-      <div className="bg-black-faint h-screen">
-        <div className="pt-32 pl-28 flex flex-col sm:flex-row gap-8">
+      <div className="bg-black-faint h-screen overflow-y-auto">
+        <div className="pt-16 md:pt-32 pl-20 md:pl-28 flex flex-col sm:flex-row gap-8">
           {codes.map(code => (
             <Link href={`/${code}`} key={code}>
-              <a className="text-5xl text-white-faint border-b-2">{code}</a>
+              <a className="text-3xl md:text-5xl text-white-faint border-b-2">{code}</a>
             </Link>
           ))}
         </div>
 
-        <div className="mt-24 pl-28 text-white-faint tracking-widest">
+        <div className="mt-24 pl-20 md:pl-28 text-white-faint tracking-widest">
           <div>
             <a href="https://inanis.streamlink.to/VIOLET" target="_blank" rel="noopener noreferrer">
               VIOLET

@@ -46,14 +46,12 @@ const VioletPage = ({ type, code, omitDot, passage, illustration, illustrationPo
   const styles = illustration
     ? {
       backgroundImage: `url(${illustration})`,
-      backgroundRepeat: 'no-repeat',
-      backgroundSize: 'contain',
-      backgroundPositionX: illustrationPosition
+      backgroundPositionX: illustrationPosition,
     }
     : {};
 
   return (
-    <div className="h-screen bg-black-faint flex flex-col justify-between items-center text-center p-10" style={styles}>
+    <div className="violet h-screen bg-black-faint flex flex-col justify-between items-center text-center p-10" style={styles}>
       <div className="text-white-leading tracking-[0.2em] text-2xl">
         <div className="mb-2">{finalType.jp}</div>
         <div>{finalType.en}</div>

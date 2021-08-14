@@ -18,6 +18,15 @@ a {
   @apply border-b-2;
 }
 
+.violet {
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media only screen and ( min-width: 768px ) {
+    background-size: contain;
+  }
+}
+
 @keyframes shake {
   0% {
     transform: translate3d(0, 0, 0);
